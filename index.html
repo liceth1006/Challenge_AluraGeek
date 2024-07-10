@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@300&family=Open+Sans&family=Oswald&family=Poppins:wght@200;500;700&family=Press+Start+2P&family=REM&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/LogoAluraGeek.png"
+        alt="LogoAluraGeek"
+      />
+      <h1 class="header__title">AluraGeek</h1>
+    </header>
+
+    <div class="grouping">
+      <div class="column">
+        <div class="cards">
+          <h2 class="title">MIS PRODUCTOS:</h2>
+          <ul class="productos__container" alt="productos" data-lista>
+          
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="form" data-form>
+          <h2>AGREGAR PRODUCTO:</h2>
+          <form action="">
+            <div>
+              <label for="">nombre</label>
+              <input type="text" data-name/>
+            </div>
+            <div>
+              <label for="">precio</label>
+              <input type="text" data-price/>
+            </div>
+            <div>
+              <label for="">Url imagen</label>
+              <input type="text" data-image/>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ef3eea8822.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/getProducts.js" type="module"></script>
+    <script src="./js/postProducts.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,408 @@
+:root {
+  font-family: "Press Start 2P", sans-serif;
+  --header-color: #5300c8;
+  --second-color: #9303a6;
+  --main-color: #001634;
+  --white: #d4d4d4;
+  --black: #000000;
+}
+
+body {
+  color: var(--black);
+  background: var(--main-color);
+  background: var(--white);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-color);
+  align-content: center;
+}
+
+.header__logo {
+  margin: 0.8rem;
+  height: auto;
+  width: 9rem;
+}
+
+.header__title {
+  text-align: center;
+  color: var(--white);
+  margin: 0.8rem;
+  padding-top: 0.3rem;
+  font-size: 24px;
+}
+
+.grouping {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 1rem;
+}
+.column {
+  padding: 0rem;
+}
+.cards{
+   margin: 5rem 0rem;
+}
+.productos__container {
+    margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  max-height: 400px; 
+  overflow-y: auto; 
+  padding: 10px;
+}
+.card {
+  width: 150px;
+  height: 244px;
+  padding: 0.8em;
+  background: var(--header-color);
+  position: relative;
+  overflow: visible;
+  border: black solid 2px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-right: 3.2%;
+}
+.title {
+  text-align: center;
+}
+
+.card_image_container {
+  background-color: var(--second-color);
+  height: 50%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.card_title_container {
+  padding-top: 10%;
+}
+svg {
+  width: 20px;
+  height: 20px;
+  color: var(--white);
+}
+
+/*Text*/
+.text-title {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: var(--white);
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/*Button*/
+.card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--header-color);
+  transition: 0.3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px,
+    rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+  border: 1px solid var(--second-color);
+  background-color: var(--second-color);
+}
+
+/* 
+
+
+.aside {
+    width: 18%;
+}
+
+.lista__menu{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10% 0% 10%;
+    height: 20%;
+    width: 100% ;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.item__lista{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.fa-house {
+    margin-right: 5%;
+}
+
+.fa-eye{
+    margin-right: 5%;
+}
+
+.fa-thumbs-up{
+    margin-right: 5%;
+}
+
+.fa-lightbulb{
+    margin-right: 5%;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1% 2%;
+}
+
+
+ .banner__image{
+    margin: 0% 1% 0% 0%;  
+} 
+ 
+
+.gallery__text{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+
+.card__section{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin-left: 19%;
+    margin-right: 2%;
+}
+
+
+.ul__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    height: 13rem;
+    background-color:var(--main-color);;
+    width: 23%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 3.2%;
+
+} 
+
+.card__image{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-items: center;
+    border-radius: 10px 10px 0px 0px;
+} 
+
+.card__title{
+    font-size: 14px;
+    margin-left: 4%;
+    margin-top: 2%;
+    font-weight: 100;
+}
+
+.card__subtitle{
+    font-size: 10px;
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.card__information{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--main-color);;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__icons{
+    color: var(--white);
+    margin-left: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+
+}
+
+.fa-twitter{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.footer__text{
+    margin-right: 3%;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+ */
+
+/* @media screen and (max-width: 851px){
+
+    .header__logo{
+        margin: 0.8rem;
+        height: 1%;
+        width: 30%;
+    }
+    
+    .header__input{
+        width: 45%;
+        height: 5%;
+        margin: 2% 3% 2% 2%;
+        display: flex;
+        align-self: center;
+    }
+
+    
+    .card{
+        height: 15rem;
+        width: 40%;
+    } 
+    
+    .card__image{
+        width: 100%;
+        height: 80%;
+    } 
+    
+    .card__title{
+        font-size: 12px;
+        
+    }
+
+    .card__subtitle{
+        display: none;
+    }
+
+    .lista__menu{
+        margin-left: 10%;
+        font-size: 12px;
+          
+    }
+
+    .gallery__text{
+        font-size: 14px;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+        margin: 3%;
+    }
+}
+ 
+
+
+@media screen and (max-width: 526px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__logo{
+        margin: 0.8rem;
+        height: 1%;
+        width: 30%;
+    }
+    
+    .header__input{
+        width: 92%;
+        height: 5%;
+        margin: 2% 3% 2% 2%;
+        display: flex;
+        align-self: center;
+    }
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin: 1% ;
+    }
+
+    .card__section{
+        width: 94%;
+        margin-left: 4%;
+    }
+
+    .card{
+        height: 8rem;
+        width: 47%;
+        margin: 1%;
+    } 
+    
+    .card__image{
+        width: 100%;
+        height: 80%;
+    } 
+    
+    .card__title{
+        font-size: 10px;
+        
+    }
+
+    .lista__menu{
+        display: none;
+          
+    }
+
+    .gallery__text{
+        font-size: 14px;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+    }
+} */

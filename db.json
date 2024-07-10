@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "computador",
+      "price": "2500000",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_861394-MLA31420393940_072019-O.webp"
+    },
+    {
+      "id": 2,
+      "name": "computador",
+      "price": "2500000",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_861394-MLA31420393940_072019-O.webp"
+    },
+    {
+      "id": "4885",
+      "name": "pc",
+      "price": "3333",
+      "image": "https://www.crucial.mx/content/dam/crucial/articles/for-pc-builders/new025-how-to-upgrade-your-pc/modern-gaming-pc.jpg.transform/medium-jpg/img.jpg"
+    }
+  ]
+}
