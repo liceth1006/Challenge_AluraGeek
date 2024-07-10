@@ -28,29 +28,49 @@
       <div class="column">
         <div class="cards">
           <h2 class="title">MIS PRODUCTOS:</h2>
-          <ul class="productos__container" alt="productos" data-lista>
-          
-          </ul>
+          <ul class="productos__container" alt="productos" data-lista></ul>
         </div>
       </div>
       <div class="column">
-        <div class="form" data-form>
-          <h2>AGREGAR PRODUCTO:</h2>
-          <form action="">
-            <div>
-              <label for="">nombre</label>
-              <input type="text" data-name/>
+        <div class="cards">
+          <h2 class="title">AGREGAR PRODUCTO:</h2>
+          <form action="" data-form>
+            <div class="container__formulario">
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="">nombre</label>
+                <input
+                  class="campo__escrita"
+                  name="name"
+                  type="text"
+                  data-name
+                  required
+                  minlength="3"
+                />
+                <span class="mensaje-error"></span>
+              </fieldset>
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="">precio</label>
+                <input
+                  class="campo__escrita"
+                  type="text"
+                  data-price
+                  required
+                  pattern="^\d+(\.\d{1,2})?$"
+                  name="price"
+                />
+                <span class="mensaje-error"></span>
+              </fieldset>
+              <fieldset class="formulario__campo">
+                <label class="campo__etiqueta" for="">Url imagen</label>
+                <input name="image" class="campo__escrita" type="text" data-image required />
+                <span class="mensaje-error"></span>
+              </fieldset>
             </div>
-            <div>
-              <label for="">precio</label>
-              <input type="text" data-price/>
+            <div class="container_button">
+              <button class="button button-submit" type="submit">Enviar</button>
+              <button class="button" type="reset">Limpiar</button>
+              <span class="mensaje-error"></span>
             </div>
-            <div>
-              <label for="">Url imagen</label>
-              <input type="text" data-image/>
-            </div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
           </form>
         </div>
       </div>
@@ -62,5 +82,6 @@
     ></script>
     <script src="./js/getProducts.js" type="module"></script>
     <script src="./js/postProducts.js" type="module"></script>
+    <script src="./js/validation.js" type="module"></script>
   </body>
 </html>
